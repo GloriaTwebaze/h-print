@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,15 +18,15 @@ export default function Home() {
           </p>
 
           <div className="flex gap-4">
-            <a
+            <Link
               href="/3d-models"
               className="px-6 py-3 text-black transition duration-100 bg-white border-2 border-black hover:bg-black hover:text-white"
             >
               Browse Models
-            </a>
+            </Link>
           </div>
         </div>
-        <img src="/hero-img.png" width={350} />
+        <Image width={480} height={480} src="/hero-img.png" alt="Print forge hero image"/>
       </section>
     </main>
   );

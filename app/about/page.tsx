@@ -1,19 +1,22 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function AboutPage() {
-  return (
-    <main>
-        <section className="container max-w-4xl px-4 py-8 mx-auto">
+    return (
+        <main>
+            <section className="container max-w-4xl px-4 py-8 mx-auto">
                 <h1 className="mb-6 text-4xl font-bold text-center">
                     About PrintForge
                 </h1>
 
                 <div className="grid items-center gap-8 mb-12 md:grid-cols-2">
                     <div className="relative h-[300px] w-full">
-                        <img
+                        <Image
+                            width={724}
+                            height={724}
                             src="/about-img.png"
                             alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
-                            width="350"
+
                         />
                     </div>
                     <div>
@@ -98,6 +101,6 @@ export default function AboutPage() {
                     </p>
                 </div>
             </section>
-    </main>
-  )
+        </main>
+    )
 }
